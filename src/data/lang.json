@@ -1,0 +1,43 @@
+{
+    "javascript": {
+        "name": "Javascript",
+        "test": "mocha",
+        "id": 0,
+        "enable": true
+    },
+    "python": {
+        "name": "Python",
+        "id": 1,
+        "enable": false
+    },
+    "swift": {
+        "name": "Swift",
+        "id": 2,
+        "enable": false
+    },
+    "go": {
+        "name": "Go",
+        "id": 3,
+        "enable": false
+    },
+    "c": {
+        "name": "C/C++/C#",
+        "id": 4,
+        "enable": false
+    },
+    "java": {
+        "name": "Java",
+        "id": 5,
+        "enable": false
+    },
+    "objc": {
+        "name": "Objective-c",
+        "id": 6,
+        "enable": false
+    },
+    "ruby": {
+        "name": "Ruby",
+        "id": 7,
+        "enable": false
+    }
+}
