@@ -62,8 +62,39 @@ function paging ( req ){
     };
 }
 
+function parasmDetect ( arr, obj ){
+  let failItem = null;
+  for( let i = 0, len = arr.length; i < len; i++ ){
+    if( !obj[ arr[ i ] ] ){
+      failItem = arr[ i ];
+      break;  
+    }
+  }
+  if( failItem ){
+    return {  
+      failure: true,
+      message: `params missing:${ failItem }`
+    };
+  }
+  return {
+    success: true
+  };
+}
+
+/**
+ * 从schema提取非allowNull的key
+ */
+function extractMeta ( obj ){
+  var ks = Object.keys( obj );
+  return ks.filter( k => {
+    if( !k.allowNull ) return k;
+  });
+}
+
 module.exports = {
     uuid,
     pbkdf,
-    paging
+    paging,
+    extractMeta,
+    parasmDetect
 };
