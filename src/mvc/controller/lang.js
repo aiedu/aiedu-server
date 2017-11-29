@@ -4,7 +4,6 @@ const redis = require('../../db/redis');
 const langData = require('../../data/lang');
 
 module.exports = app => {
-    //添加一个用户
     app.get('/lang', ( req, res ) => {
         let r = {};
         for( let l in langData ){

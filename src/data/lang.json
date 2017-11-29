@@ -3,7 +3,8 @@
         "name": "Javascript",
         "test": "mocha",
         "id": 0,
-        "enable": true
+        "enable": true,
+        "version": "ECMAScript6"
     },
     "python": {
         "name": "Python",

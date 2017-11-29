@@ -20,11 +20,11 @@ module.exports = app => {
             title: req.body.title,
             description: req.body.description,
             language: req.body.language,
-            solution: req.body.solution,
-            cases: req.body.cases,
-            is_public: req.body.is_public
+            solution: req.body.solution,    
+            cases: req.body.cases,      
+            is_public: req.body.is_public   
         })
-        .then( res.jsonSucc )
+        .then( res.jsonSucc )   
         .catch( res.jsonDBE )
     });
 
